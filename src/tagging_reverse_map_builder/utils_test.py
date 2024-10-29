@@ -22,13 +22,13 @@ def test_generate_reverse_maps():
     # Therefore the format is:
     # banner-ID -> ( (adition-user-ID, new-user-ID, external-user-ID) -> click-count )
     banner_id_to_user_ids_count = {
-        111111: OrderedDict(
-            [((11, 12, '13'), 2)]
+        111111: OrderedDict(       # click ids for banner 111111
+            [((11, 12, '13'), 2)]  # click ids 1 and 2
         ),
-        222222: OrderedDict(
-            [((21, 22, '23'), 1),
-             ((31, 32, '33'), 1),
-             ((41, 42, '43'), 1)]
+        222222: OrderedDict(       # click ids for banner 222222
+            [((21, 22, '23'), 1),  # click id 1
+             ((31, 32, '33'), 1),  # click id 2
+             ((41, 42, '43'), 1)]  # click id 3
         )
     }
 
